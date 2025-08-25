@@ -148,6 +148,23 @@
   opacity: 1 !important;
 }
 
+/* Dark mode alert and warning box fixes */
+[data-theme="dark"] .alert-warning {
+  background-color: #374151 !important;
+  border-color: #6b7280 !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .alert-warning h6,
+[data-theme="dark"] .alert-warning p {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .bg-warning {
+  background-color: #374151 !important;
+  color: var(--text-primary) !important;
+}
+
 /* Dark mode article timestamps */
 [data-theme="dark"] .article-card small.text-muted {
   color: #cbd5e1 !important;
