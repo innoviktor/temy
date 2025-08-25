@@ -1,8 +1,8 @@
-# TechNow - Technology News Website
+# HQTechTalk - Technology News Website
 
 ## Overview
 
-TechNow is a static technology news and review website that provides content across multiple technology categories including mobile phones, laptops, gaming, wearables, appliances, and smart home devices. The website features a modern, responsive design with dark/light theme support and is built as a multi-page static site focusing on technology journalism and product reviews.
+HQTechTalk is a static technology news and review website that provides content across multiple technology categories including mobile phones, laptops, gaming, wearables, appliances, and smart home devices. The website features a modern, responsive design with dark/light theme support and is built as a multi-page static site focusing on technology journalism and product reviews.
 
 ## User Preferences
 

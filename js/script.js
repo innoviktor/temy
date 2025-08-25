@@ -1,6 +1,6 @@
-// TechNow JavaScript Functions
+// HQTechTalk JavaScript Functions
 
-class TechNowApp {
+class HQTechTalkApp {
     constructor() {
         this.theme = localStorage.getItem('theme') || 'light';
         this.init();
@@ -378,7 +378,7 @@ class TechNowApp {
 
 // Initialize the application when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    const app = new TechNowApp();
+    const app = new HQTechTalkApp();
     
     // Setup accessibility features
     app.setupAccessibility();
@@ -387,7 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
     app.measurePerformance();
     
     // Make app globally available for debugging
-    window.TechNowApp = app;
+    window.HQTechTalkApp = app;
 });
 
 // Service Worker registration for PWA capabilities (optional)
@@ -402,5 +402,5 @@ if ('serviceWorker' in navigator) {
 
 // Export for module usage (if needed)
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = TechNowApp;
+    module.exports = HQTechTalkApp;
 }
