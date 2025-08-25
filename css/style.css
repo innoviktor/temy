@@ -149,6 +149,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 120px;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-graphic {
@@ -166,6 +168,57 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
+}
+
+/* Animated Background Gadgets */
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gadget-animation {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gadget-icon {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--primary-color);
+  opacity: 0;
+  left: var(--x);
+  top: var(--y);
+  animation: gadgetPulse 10s infinite;
+  animation-delay: var(--delay);
+  filter: blur(0.5px);
+  transform: scale(0.8);
+}
+
+/* Ensure hero content is above background */
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes gadgetPulse {
+  0%, 90%, 100% {
+    opacity: 0;
+    transform: scale(0.8) rotate(0deg);
+  }
+  10%, 80% {
+    opacity: 0.15;
+    transform: scale(1) rotate(5deg);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.1) rotate(-5deg);
+  }
 }
 
 /* Page Header */
@@ -404,6 +457,10 @@ footer small {
   
   .hero-icon {
     font-size: 4rem;
+  }
+  
+  .gadget-icon {
+    font-size: 1.5rem;
   }
   
   .page-header {
