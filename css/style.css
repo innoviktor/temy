@@ -187,17 +187,331 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
-.gadget-icon {
+.gadget-image {
   position: absolute;
-  font-size: 2rem;
-  color: var(--primary-color);
   opacity: 0;
   left: var(--x);
   top: var(--y);
   animation: gadgetPulse 10s infinite;
   animation-delay: var(--delay);
-  filter: blur(0.5px);
   transform: scale(0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Smartphone */
+.smartphone {
+  width: 40px;
+  height: 70px;
+  background: linear-gradient(145deg, #1f2937, #374151);
+  border: 2px solid var(--primary-color);
+  border-radius: 12px;
+}
+.smartphone::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 15px;
+  background: linear-gradient(145deg, var(--primary-color), var(--primary-light));
+  border-radius: 4px;
+}
+.smartphone::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 3px;
+  background: var(--primary-light);
+  border-radius: 2px;
+}
+
+/* Laptop */
+.laptop {
+  width: 60px;
+  height: 40px;
+  background: linear-gradient(145deg, #374151, #4b5563);
+  border-radius: 4px;
+  position: relative;
+}
+.laptop::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 2px;
+  right: 2px;
+  height: 30px;
+  background: linear-gradient(145deg, #1f2937, #374151);
+  border: 2px solid var(--primary-color);
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+.laptop::after {
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: 8px;
+  right: 8px;
+  height: 16px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+/* Tablet */
+.tablet {
+  width: 50px;
+  height: 65px;
+  background: linear-gradient(145deg, #1f2937, #374151);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+}
+.tablet::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  right: 6px;
+  bottom: 12px;
+  background: linear-gradient(145deg, var(--primary-color), var(--primary-light));
+  border-radius: 3px;
+}
+.tablet::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 3px;
+  background: var(--primary-light);
+  border-radius: 2px;
+}
+
+/* Smartwatch */
+.smartwatch {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(145deg, #1f2937, #374151);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  position: relative;
+}
+.smartwatch::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+.smartwatch::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 4px;
+  background: #4b5563;
+  border-radius: 2px;
+  box-shadow: 0 46px 0 #4b5563;
+}
+
+/* Headphones */
+.headphones {
+  width: 50px;
+  height: 45px;
+  position: relative;
+}
+.headphones::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 20px;
+  border: 3px solid var(--primary-color);
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+.headphones::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 18px;
+  height: 25px;
+  background: linear-gradient(145deg, #1f2937, #374151);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 30px 0 0 -2px var(--primary-color), 28px 0 0 0 linear-gradient(145deg, #1f2937, #374151);
+}
+
+/* Gamepad */
+.gamepad {
+  width: 55px;
+  height: 35px;
+  background: linear-gradient(145deg, #1f2937, #374151);
+  border: 2px solid var(--primary-color);
+  border-radius: 15px;
+  position: relative;
+}
+.gamepad::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 8px;
+  height: 3px;
+  background: var(--primary-color);
+  box-shadow: 0 6px 0 var(--primary-color), 25px -3px 0 var(--primary-color), 25px 3px 0 var(--primary-color);
+}
+.gamepad::after {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  width: 12px;
+  height: 8px;
+  background: #4b5563;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 25px 0 0 #4b5563;
+}
+
+/* Camera */
+.camera {
+  width: 50px;
+  height: 35px;
+  background: linear-gradient(145deg, #1f2937, #374151);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  position: relative;
+}
+.camera::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 15px;
+  width: 20px;
+  height: 8px;
+  background: #4b5563;
+  border-radius: 4px 4px 0 0;
+}
+.camera::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  background: var(--primary-light);
+}
+
+/* Monitor */
+.monitor {
+  width: 55px;
+  height: 35px;
+  background: linear-gradient(145deg, #1f2937, #374151);
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  position: relative;
+}
+.monitor::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 8px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+.monitor::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 8px;
+  background: #4b5563;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Speaker */
+.speaker {
+  width: 35px;
+  height: 50px;
+  background: linear-gradient(145deg, #1f2937, #374151);
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  position: relative;
+}
+.speaker::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  background: var(--primary-light);
+}
+.speaker::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 12px;
+  border: 2px solid var(--primary-color);
+  border-radius: 6px;
+  background: var(--primary-color);
+}
+
+/* Drone */
+.drone {
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+.drone::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 15px;
+  background: linear-gradient(145deg, #1f2937, #374151);
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+}
+.drone::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.3);
+  box-shadow: 25px 0 0 -2px var(--primary-color), 23px 0 0 0 rgba(37, 99, 235, 0.3),
+              0 25px 0 -2px var(--primary-color), 0 23px 0 0 rgba(37, 99, 235, 0.3),
+              25px 25px 0 -2px var(--primary-color), 23px 23px 0 0 rgba(37, 99, 235, 0.3);
 }
 
 /* Ensure hero content is above background */
@@ -459,8 +773,8 @@ footer small {
     font-size: 4rem;
   }
   
-  .gadget-icon {
-    font-size: 1.5rem;
+  .gadget-image {
+    transform: scale(0.6);
   }
   
   .page-header {
@@ -513,6 +827,10 @@ footer small {
   
   .page-icon {
     font-size: 2.5rem;
+  }
+  
+  .gadget-image {
+    transform: scale(0.5);
   }
 }
 

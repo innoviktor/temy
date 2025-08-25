@@ -24,10 +24,15 @@ Preferred communication style: Simple, everyday language.
 - **Semantic HTML**: Proper use of HTML5 semantic elements for accessibility and SEO
 
 ### Page Structure
-- **Home Page**: Hero section with category exploration
+- **Home Page**: Hero section with animated tech gadget background and category exploration
 - **Category Pages**: Dedicated pages for mobile phones, laptops, games, wearables, appliances, and smart home
 - **Static Pages**: About and contact pages for company information
 - **Consistent Navigation**: Fixed header with brand logo and category navigation
+
+### Visual Features
+- **Animated Background**: CSS-based tech gadget animations on hero section showing various devices (smartphones, laptops, tablets, smartwatches, headphones, gaming controllers, cameras, monitors, speakers, drones)
+- **Sequential Animation**: Gadgets appear and disappear in timed sequences with rotation and scaling effects
+- **Responsive Gadgets**: Background elements scale appropriately on mobile devices
 
 ### Theme Management
 - **Dual Theme Support**: Light and dark mode with persistent user preference storage
