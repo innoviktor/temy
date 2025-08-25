@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdSense Integration Guide - HQTechTalk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/logo.svg" alt="HQTechTalk" width="40" height="40" class="me-2">
+                <span class="fw-bold">HQTechTalk</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="deals.html">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mobile.html">Mobile Phones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="laptops.html">Laptops</a></li>
+                    <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wearables.html">Wearables</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appliances.html">Appliances</a></li>
+                    <li class="nav-item"><a class="nav-link" href="smarthome.html">Smart Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button class="btn btn-outline-light theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="py-5" style="margin-top: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h1 class="display-5 fw-bold mb-4">AdSense Integration Guide</h1>
+                    <p class="lead">How to replace placeholder ad spaces with real Google AdSense ads on your HQTechTalk website.</p>
+
+                    <div class="alert alert-info">
+                        <h6><i class="fas fa-info-circle me-2"></i>About Advertisement Spaces</h6>
+                        <p class="mb-0">Your website now includes strategically placed advertisement spaces ready for AdSense integration. These placeholder areas show exactly where ads will appear and what sizes they support.</p>
+                    </div>
+
+                    <h2>Available Ad Spaces</h2>
+                    <p>The following ad spaces have been integrated throughout your website:</p>
+
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Top Banner Ads</h5>
+                                    <ul class="mb-0">
+                                        <li><strong>Desktop:</strong> 728x90 Leaderboard</li>
+                                        <li><strong>Mobile:</strong> 320x50 Mobile Banner</li>
+                                        <li><strong>Location:</strong> Top of page after header</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sidebar Ads</h5>
+                                    <ul class="mb-0">
+                                        <li><strong>Size:</strong> 300x250 Rectangle</li>
+                                        <li><strong>Position:</strong> Sticky sidebar</li>
+                                        <li><strong>Location:</strong> News and deals pages</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">In-Content Ads</h5>
+                                    <ul class="mb-0">
+                                        <li><strong>Size:</strong> 300x250 Rectangle</li>
+                                        <li><strong>Location:</strong> Between content sections</li>
+                                        <li><strong>Placement:</strong> Home, news, and article pages</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bottom Banner Ads</h5>
+                                    <ul class="mb-0">
+                                        <li><strong>Size:</strong> 728x90 Leaderboard</li>
+                                        <li><strong>Location:</strong> Above footer on all pages</li>
+                                        <li><strong>Visibility:</strong> Desktop and tablet only</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>How to Replace with Real AdSense Ads</h2>
+                    
+                    <div class="alert alert-warning">
+                        <h6><i class="fas fa-exclamation-triangle me-2"></i>Prerequisites</h6>
+                        <p class="mb-0">You need a Google AdSense account and approved website. Visit <a href="https://www.google.com/adsense/" target="_blank">adsense.google.com</a> to get started.</p>
+                    </div>
+
+                    <h3>Step 1: Create Ad Units in AdSense</h3>
+                    <ol>
+                        <li>Log into your Google AdSense account</li>
+                        <li>Go to "Ads" → "By ad unit"</li>
+                        <li>Click "Create new ad unit"</li>
+                        <li>Create the following ad units:
+                            <ul>
+                                <li><strong>Header Banner:</strong> 728x90 Display ad</li>
+                                <li><strong>Mobile Banner:</strong> 320x50 Display ad</li>
+                                <li><strong>Sidebar/Content Rectangle:</strong> 300x250 Display ad</li>
+                            </ul>
+                        </li>
+                        <li>Copy the ad code for each unit</li>
+                    </ol>
+
+                    <h3>Step 2: Replace Placeholder HTML</h3>
+                    <p>Replace the placeholder ad HTML with your AdSense code. Here's what to look for and replace:</p>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h6 class="mb-0">Current Placeholder Code:</h6>
+                        </div>
+                        <div class="card-body">
+                            <pre><code>&lt;div class="ad-banner ad-leaderboard"&gt;
+    &lt;div class="ad-banner-content"&gt;
+        &lt;div class="ad-label"&gt;Advertisement&lt;/div&gt;
+        &lt;div&gt;728 x 90 Leaderboard Ad Space&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h6 class="mb-0">Replace With AdSense Code:</h6>
+                        </div>
+                        <div class="card-body">
+                            <pre><code>&lt;div class="ad-banner ad-leaderboard"&gt;
+    &lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
+         crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"
+         data-ad-format="auto"
+         data-full-width-responsive="true"&gt;&lt;/ins&gt;
+    &lt;script&gt;
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    &lt;/script&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <h3>Step 3: Files to Update</h3>
+                    <p>You'll need to update the ad placeholders in these files:</p>
+                    <ul>
+                        <li><code>index.html</code> - Home page ads</li>
+                        <li><code>news.html</code> - News page ads</li>
+                        <li><code>deals.html</code> - Deals page ads</li>
+                        <li><code>article-*.html</code> - Individual article page ads</li>
+                    </ul>
+
+                    <h3>Step 4: Add AdSense Header Script</h3>
+                    <p>Add the AdSense script to the <code>&lt;head&gt;</code> section of each page:</p>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <pre><code>&lt;script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
+     crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+                        </div>
+                    </div>
+
+                    <h2>Ad Performance Tips</h2>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-chart-line text-success me-2"></i>Optimization</h5>
+                                    <ul class="mb-0">
+                                        <li>Use responsive ad units</li>
+                                        <li>Test different ad placements</li>
+                                        <li>Monitor click-through rates</li>
+                                        <li>Optimize for mobile users</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-users text-primary me-2"></i>User Experience</h5>
+                                    <ul class="mb-0">
+                                        <li>Don't overwhelm with too many ads</li>
+                                        <li>Ensure fast page loading</li>
+                                        <li>Keep content above the fold</li>
+                                        <li>Use relevant ad targeting</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Alternative Ad Networks</h2>
+                    <p>Besides Google AdSense, your ad spaces are compatible with other advertising networks:</p>
+                    <ul>
+                        <li><strong>Media.net</strong> - Yahoo/Bing contextual ads</li>
+                        <li><strong>Amazon Associates</strong> - Affiliate product recommendations</li>
+                        <li><strong>PropellerAds</strong> - Display and push notification ads</li>
+                        <li><strong>Infolinks</strong> - In-text advertising</li>
+                        <li><strong>Direct sponsors</strong> - Custom advertiser partnerships</li>
+                    </ul>
+
+                    <div class="alert alert-success">
+                        <h6><i class="fas fa-check-circle me-2"></i>Ready for Monetization</h6>
+                        <p class="mb-0">Your website is now fully prepared for advertisement integration. The professional ad placement and responsive design will help maximize your revenue potential while maintaining a great user experience.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/logo.svg" alt="HQTechTalk" width="30" height="30" class="me-2">
+                        <span class="h5 mb-0">HQTechTalk</span>
+                    </div>
+                    <p>Your ultimate destination for technology news, reviews, and insights.</p>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4">
+                    <h6>Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="news.html" class="text-light-emphasis text-decoration-none">News</a></li>
+                        <li><a href="deals.html" class="text-light-emphasis text-decoration-none">Deals</a></li>
+                        <li><a href="mobile.html" class="text-light-emphasis text-decoration-none">Mobile</a></li>
+                        <li><a href="laptops.html" class="text-light-emphasis text-decoration-none">Laptops</a></li>
+                        <li><a href="games.html" class="text-light-emphasis text-decoration-none">Games</a></li>
+                        <li><a href="wearables.html" class="text-light-emphasis text-decoration-none">Wearables</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4">
+                    <h6>More</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="appliances.html" class="text-light-emphasis text-decoration-none">Appliances</a></li>
+                        <li><a href="smarthome.html" class="text-light-emphasis text-decoration-none">Smart Home</a></li>
+                        <li><a href="about.html" class="text-light-emphasis text-decoration-none">About</a></li>
+                        <li><a href="contact.html" class="text-light-emphasis text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6>Follow Us</h6>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 HQTechTalk. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light-emphasis text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light-emphasis text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

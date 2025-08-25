@@ -1237,3 +1237,140 @@ html {
     margin-bottom: 0.5rem;
   }
 }
+
+/* Advertisement Spaces */
+.ad-banner {
+  background-color: var(--bg-secondary);
+  border: 1px dashed var(--border-color);
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.ad-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    var(--border-light) 10px,
+    var(--border-light) 11px
+  );
+  opacity: 0.1;
+}
+
+.ad-banner-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Standard Ad Sizes */
+.ad-leaderboard {
+  height: 90px;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+.ad-rectangle {
+  height: 250px;
+  width: 300px;
+  margin: 1rem auto;
+}
+
+.ad-sidebar {
+  height: 250px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.ad-mobile-banner {
+  height: 50px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.ad-square {
+  height: 250px;
+  width: 250px;
+  margin: 1rem auto;
+}
+
+.ad-skyscraper {
+  height: 600px;
+  width: 160px;
+  margin: 1rem auto;
+}
+
+/* In-content ads */
+.ad-in-content {
+  margin: 2rem 0;
+  clear: both;
+}
+
+/* Responsive ad behavior */
+@media (max-width: 768px) {
+  .ad-leaderboard {
+    display: none;
+  }
+  
+  .ad-mobile-banner {
+    display: block;
+  }
+  
+  .ad-rectangle,
+  .ad-sidebar {
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+  }
+  
+  .ad-skyscraper {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .ad-mobile-banner {
+    display: none;
+  }
+  
+  .ad-leaderboard {
+    display: flex;
+  }
+}
+
+/* Sticky sidebar ads */
+.ad-sticky {
+  position: sticky;
+  top: 100px;
+}
+
+/* Ad labels */
+.ad-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Hide ads in print */
+@media print {
+  .ad-banner {
+    display: none !important;
+  }
+}
