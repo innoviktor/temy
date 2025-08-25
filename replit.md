@@ -25,6 +25,7 @@ Preferred communication style: Simple, everyday language.
 
 ### Page Structure
 - **Home Page**: Hero section with animated tech gadget background and category exploration
+- **News Page**: Latest technology news, rumors, and breaking developments including iPhone 17 speculation
 - **Category Pages**: Dedicated pages for mobile phones, laptops, games, wearables, appliances, and smart home
 - **Static Pages**: About and contact pages for company information
 - **Consistent Navigation**: Fixed header with brand logo and category navigation
