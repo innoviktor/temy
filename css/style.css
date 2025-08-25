@@ -51,9 +51,9 @@
   --bg-card: #1e293b;
   
   --text-primary: #f8fafc;
-  --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
-  --text-light: #64748b;
+  --text-secondary: #e2e8f0;
+  --text-muted: #cbd5e1;
+  --text-light: #94a3b8;
   
   --border-color: #334155;
   --border-light: #475569;
@@ -76,7 +76,57 @@
 }
 
 [data-theme="dark"] .text-muted {
-  color: var(--text-muted) !important;
+  color: #cbd5e1 !important;
+  opacity: 1 !important;
+}
+
+/* Dark mode card and content improvements */
+[data-theme="dark"] .card-title,
+[data-theme="dark"] .article-card h4,
+[data-theme="dark"] .article-card h5,
+[data-theme="dark"] .article-card h6 {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .card-text,
+[data-theme="dark"] .article-card p {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .popular-article h6 {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .sidebar-widget h5,
+[data-theme="dark"] .sidebar-widget h6 {
+  color: var(--text-primary) !important;
+}
+
+/* Dark mode metadata and timestamps */
+[data-theme="dark"] .meta-text,
+[data-theme="dark"] .text-sm,
+[data-theme="dark"] .small,
+[data-theme="dark"] small,
+[data-theme="dark"] .meta-info {
+  color: var(--text-secondary) !important;
+  opacity: 1 !important;
+}
+
+/* Dark mode view counts and sidebar content */
+[data-theme="dark"] .popular-article small {
+  color: #cbd5e1 !important;
+  font-weight: 500 !important;
+}
+
+/* Dark mode Bootstrap classes overrides */
+[data-theme="dark"] .text-light-emphasis {
+  color: var(--text-secondary) !important;
+}
+
+/* Dark mode article timestamps */
+[data-theme="dark"] .article-card small.text-muted {
+  color: #cbd5e1 !important;
+  font-weight: 400 !important;
 }
 
 /* Base styles */
