@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
-  <rect width="400" height="250" fill="#f8f9fa" stroke="#dee2e6"/>
-  <rect x="80" y="80" width="240" height="140" fill="#495057" rx="8"/>
-  <rect x="90" y="90" width="220" height="120" fill="#343a40" rx="4"/>
-  <rect x="75" y="205" width="250" height="15" fill="#6c757d" rx="7"/>
-  <circle cx="200" cy="212" r="3" fill="#495057"/>
-  <text x="200" y="180" text-anchor="middle" fill="#adb5bd" font-family="Arial" font-size="16" font-weight="bold">LAPTOP</text>
-  <text x="200" y="240" text-anchor="middle" fill="#6c757d" font-family="Arial" font-size="12">Placeholder Image</text>
-</svg>
