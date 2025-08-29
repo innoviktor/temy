@@ -826,6 +826,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
+/* Fix for article-hero-image class on individual article pages */
+.article-page .article-hero-image {
+  height: auto;
+  display: block;
+  background: none;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.article-page .article-hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 0.375rem;
+}
+
 .placeholder-icon {
   font-size: 3rem;
   color: var(--text-muted);
