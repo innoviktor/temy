@@ -165,7 +165,7 @@
   color: var(--text-primary) !important;
 }
 
-/* Alert success box fixes for both light and dark themes */
+/* Alert box fixes for both light and dark themes */
 .alert-success {
   background-color: #d4edda !important;
   border-color: #c3e6cb !important;
@@ -177,6 +177,51 @@
   color: #155724 !important;
 }
 
+.alert-info {
+  background-color: #d1ecf1 !important;
+  border-color: #bee5eb !important;
+  color: #0c5460 !important;
+}
+
+.alert-info h6,
+.alert-info p {
+  color: #0c5460 !important;
+}
+
+.alert-warning {
+  background-color: #fff3cd !important;
+  border-color: #ffeaa7 !important;
+  color: #856404 !important;
+}
+
+.alert-warning h6,
+.alert-warning p {
+  color: #856404 !important;
+}
+
+.alert-primary {
+  background-color: #d4e7fd !important;
+  border-color: #bee5eb !important;
+  color: #003d82 !important;
+}
+
+.alert-primary h6,
+.alert-primary p {
+  color: #003d82 !important;
+}
+
+.alert-secondary {
+  background-color: #e2e3e5 !important;
+  border-color: #d3d6d8 !important;
+  color: #383d41 !important;
+}
+
+.alert-secondary h6,
+.alert-secondary p {
+  color: #383d41 !important;
+}
+
+/* Dark theme alert fixes */
 [data-theme="dark"] .alert-success {
   background-color: #1e3a28 !important;
   border-color: #2d5a3d !important;
@@ -185,6 +230,50 @@
 
 [data-theme="dark"] .alert-success h6,
 [data-theme="dark"] .alert-success p {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .alert-info {
+  background-color: #1e3a40 !important;
+  border-color: #2d5a68 !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .alert-info h6,
+[data-theme="dark"] .alert-info p {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .alert-warning {
+  background-color: #3a3520 !important;
+  border-color: #5a5230 !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .alert-warning h6,
+[data-theme="dark"] .alert-warning p {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .alert-primary {
+  background-color: #1e2a3a !important;
+  border-color: #2d4154 !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .alert-primary h6,
+[data-theme="dark"] .alert-primary p {
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .alert-secondary {
+  background-color: #2a2c2e !important;
+  border-color: #3f4142 !important;
+  color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .alert-secondary h6,
+[data-theme="dark"] .alert-secondary p {
   color: var(--text-primary) !important;
 }
 
