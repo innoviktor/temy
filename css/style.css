@@ -801,6 +801,31 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+/* Override for individual article pages with actual images */
+.article-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 0.375rem;
+}
+
+/* Specific class for individual article pages - more reliable than :has() */
+.article-page .article-image {
+  height: auto;
+  display: block;
+  background: none;
+  margin-bottom: 2rem;
+}
+
+/* Alternative: Reset article-image when it contains img for wider browser support */
+.article-image.with-image {
+  height: auto;
+  display: block;
+  background: none;
+  margin-bottom: 2rem;
+}
+
 .placeholder-icon {
   font-size: 3rem;
   color: var(--text-muted);
