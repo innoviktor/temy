@@ -1163,16 +1163,59 @@ footer small {
 }
 
 @media (max-width: 576px) {
+  /* Base font size increase for mobile readability */
+  body {
+    font-size: 1.1rem;
+  }
+  
   .hero-icon {
     font-size: 3rem;
   }
   
   .display-4 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
   }
   
   .lead {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  /* Card titles and content */
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+  .card-text {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  
+  /* Navigation links */
+  .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  /* Buttons */
+  .btn {
+    font-size: 1.05rem;
+    padding: 0.6rem 1.2rem;
+  }
+  
+  /* Form elements */
+  .form-control, .form-select {
+    font-size: 1.1rem;
+    padding: 0.7rem;
+  }
+  
+  /* Footer text */
+  footer p, footer li {
     font-size: 1rem;
+  }
+  
+  /* Small text elements */
+  small, .small {
+    font-size: 0.9rem;
   }
   
   .category-icon {
@@ -1417,11 +1460,25 @@ html {
   }
   
   .article-content {
-    font-size: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+  
+  .article-content h1 {
+    font-size: 2rem;
   }
   
   .article-content h2 {
+    font-size: 1.75rem;
+  }
+  
+  .article-content h3 {
     font-size: 1.5rem;
+  }
+  
+  .article-content p {
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
   }
   
   .article-footer {
@@ -1429,7 +1486,8 @@ html {
   }
   
   .social-share .btn {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
     margin-bottom: 0.5rem;
   }
 }
