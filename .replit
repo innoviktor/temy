@@ -5,8 +5,8 @@ channel = "stable-25_05"
 packages = ["openssl"]
 
 [deployment]
-deploymentTarget = "static"
-publicDir = "."
+deploymentTarget = "autoscale"
+publicDir = ""
 
 [workflows]
 runButton = "Project"
