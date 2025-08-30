@@ -5,8 +5,12 @@ app = Flask(__name__,
             static_folder='.',
             static_url_path='/static')
 
-# Configure secret key for sessions if needed
-app.secret_key = os.environ.get("SESSION_SECRET", "dev-secret-key")
+# Configure secret key for sessions
+app.secret_key = os.environ.get("SESSION_SECRET", "production-secret-key-change-me")
+
+# Production configuration
+app.config['ENV'] = 'production'
+app.config['DEBUG'] = False
 
 @app.route('/')
 def index():
@@ -44,4 +48,4 @@ def serve_assets(filename):
     return send_from_directory('assets', filename)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)
