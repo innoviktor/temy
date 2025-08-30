@@ -6,7 +6,7 @@ packages = ["openssl"]
 
 [deployment]
 deploymentTarget = "cloudrun"
-run = ["sh", "-c", "."]
+run = ["sh", "-c", "echo \"Static site running\""]
 
 [workflows]
 runButton = "Project"
