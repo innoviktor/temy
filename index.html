@@ -4,29 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HQTechTalk - Stay Ahead in Tech</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    animation: {
-                        'fade-in-out': 'fadeInOut 3s infinite',
-                        'glow': 'glow 2s ease-in-out infinite alternate',
-                    },
-                    keyframes: {
-                        fadeInOut: {
-                            '0%, 100%': { opacity: '0', transform: 'scale(0.8)' },
-                            '50%': { opacity: '0.3', transform: 'scale(1)' },
-                        },
-                        glow: {
-                            '0%': { boxShadow: '0 0 5px rgba(59, 130, 246, 0.5)' },
-                            '100%': { boxShadow: '0 0 20px rgba(59, 130, 246, 0.8)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://unpkg.com/tailwindcss@3.4.1/tailwind.min.css" rel="stylesheet">
     <style>
         .bg-tech-gradient {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #3b82f6 100%);
@@ -47,6 +25,10 @@
         }
         .hero-image.active {
             animation: fadeInOut 3s ease-in-out;
+        }
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0; transform: scale(0.8); }
+            50% { opacity: 0.3; transform: scale(1); }
         }
         .hero-content {
             position: relative;
@@ -124,10 +106,10 @@
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <!-- Rotating Background Images -->
         <div class="absolute inset-0">
-            <div class="hero-image" id="phone-img" style="background-image: url('images/phone.png');"></div>
-            <div class="hero-image" id="laptop-img" style="background-image: url('images/laptop.png');"></div>
-            <div class="hero-image" id="watch-img" style="background-image: url('images/watch.png');"></div>
-            <div class="hero-image" id="chip-img" style="background-image: url('images/chip.png');"></div>
+            <div class="hero-image" id="phone-img" style="background-image: url('images/phone.svg');"></div>
+            <div class="hero-image" id="laptop-img" style="background-image: url('images/laptop.svg');"></div>
+            <div class="hero-image" id="watch-img" style="background-image: url('images/watch.svg');"></div>
+            <div class="hero-image" id="chip-img" style="background-image: url('images/chip.svg');"></div>
         </div>
         
         <!-- Hero Content -->
