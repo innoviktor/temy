@@ -4,5 +4,7 @@ version = "0.1.0"
 description = "HQTechTalk - Static Technology News Website"
 requires-python = ">=3.11"
 dependencies = [
+    "flask>=3.1.2",
     # Static website - no server dependencies needed
+    "gunicorn==23.0.0",
 ]
