@@ -1,9 +1,8 @@
 [project]
-name = "repl-nix-workspace"
+name = "hqtechtalk-static-website"
 version = "0.1.0"
-description = "Add your description here"
+description = "HQTechTalk - Static Technology News Website"
 requires-python = ">=3.11"
 dependencies = [
-    "flask>=3.1.2",
-    "gunicorn>=23.0.0",
+    # Static website - no server dependencies needed
 ]
