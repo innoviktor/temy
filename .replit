@@ -6,7 +6,7 @@ packages = ["openssl"]
 
 [deployment]
 deploymentTarget = "cloudrun"
-run = ["sh", "-c", "echo"]
+run = ["gunicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
 
 [workflows]
 runButton = "Project"
