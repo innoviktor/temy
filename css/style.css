@@ -148,6 +148,31 @@
   opacity: 1 !important;
 }
 
+/* Dark mode accordion (FAQ) text readability fixes */
+[data-theme="dark"] .accordion-body,
+[data-theme="dark"] .accordion-body p,
+[data-theme="dark"] .accordion-body ul,
+[data-theme="dark"] .accordion-body li,
+[data-theme="dark"] .accordion-body strong {
+  color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .accordion-button {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-card) !important;
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-secondary) !important;
+  box-shadow: none !important;
+}
+
+[data-theme="dark"] .accordion-item {
+  background-color: var(--bg-card) !important;
+  border-color: var(--border-color) !important;
+}
+
 /* Dark mode alert and warning box fixes */
 [data-theme="dark"] .alert-warning {
   background-color: #374151 !important;
